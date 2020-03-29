@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43168" started-at="2020-03-29T21:49:05Z" finished-at="2020-03-29T21:49:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43168" started-at="2020-03-29T21:49:05Z" finished-at="2020-03-29T21:49:48Z">
+      <class name="goJek_Automation.Automation">
+        <test-method status="PASS" signature="excel_cal()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="excel_cal" is-config="true" duration-ms="362" started-at="2020-03-30T03:19:05Z" finished-at="2020-03-30T03:19:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excel_cal -->
+        <test-method status="PASS" signature="webDriverLaunch()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="webDriverLaunch" is-config="true" duration-ms="2872" started-at="2020-03-30T03:19:06Z" finished-at="2020-03-30T03:19:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webDriverLaunch -->
+        <test-method status="PASS" signature="TestCase1()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="TestCase1" duration-ms="18458" started-at="2020-03-30T03:19:08Z" finished-at="2020-03-30T03:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method status="PASS" signature="webDriverTearDown()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="webDriverTearDown" is-config="true" duration-ms="172" started-at="2020-03-30T03:19:27Z" finished-at="2020-03-30T03:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webDriverTearDown -->
+        <test-method status="PASS" signature="webDriverLaunch()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="webDriverLaunch" is-config="true" duration-ms="2345" started-at="2020-03-30T03:19:27Z" finished-at="2020-03-30T03:19:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webDriverLaunch -->
+        <test-method status="PASS" signature="TestCase2()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="TestCase2" duration-ms="18729" started-at="2020-03-30T03:19:29Z" finished-at="2020-03-30T03:19:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method status="PASS" signature="webDriverTearDown()[pri:0, instance:goJek_Automation.Automation@2133c8f8]" name="webDriverTearDown" is-config="true" duration-ms="220" started-at="2020-03-30T03:19:48Z" finished-at="2020-03-30T03:19:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webDriverTearDown -->
+      </class> <!-- goJek_Automation.Automation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
