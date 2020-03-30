@@ -6,8 +6,8 @@
       <class name="goJek_Automation.Automation">
         <methods>
           <include name="webDriverLaunch"/>
+          <include name="TestCase2"/>
           <include name="excel_cal"/>
-          <include name="TestCase1"/>
           <include name="webDriverTearDown"/>
         </methods>
       </class> <!-- goJek_Automation.Automation -->

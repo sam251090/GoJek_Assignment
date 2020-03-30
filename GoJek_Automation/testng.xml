@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="TestSuite">
+  <test name="ChromeTest">
+
+<parameter name="browser" value="Chrome" />
+
+<classes>
+<class name="goJek_Automation.Automation"/>
+</classes>
+
+</test>
+
+<test name="FirefoxTest">
+
+<parameter name="browser" value="Firefox" />
+
+<classes>
+<class name="goJek_Automation.Automation"/>
+</classes>
+
+</test>
+  
+ <!--  
   <test thread-count="5" name="Test">
   <classes>
   <class name="goJek_Automation.Automation">
   </class>
   </classes>
-  </test> <!-- Test -->
+  </test>  -->
+  <!-- Test -->  
 </suite> <!-- Suite -->
