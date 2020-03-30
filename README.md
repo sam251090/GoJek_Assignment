@@ -6,6 +6,7 @@ Assignment for Go-Jek company
 OS : mac os;
 
 Driver : Chromw Driver and Firefox Driver; 
+#using firefox version 74.0  and chrome version 80.0.3987.149
 
 Project Type : Maven; 
 
