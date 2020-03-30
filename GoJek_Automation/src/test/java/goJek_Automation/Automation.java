@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.paulhammant.ngwebdriver.NgWebDriver;
@@ -23,6 +24,7 @@ public class Automation extends WebDriverUtil {
 	
 	public WebDriver driver;    
 	public NgWebDriver ngDriver;
+	String browser="browser";
 	String cc_No1, expiry_Date1, cvv1, otp1, cc_No2, expiry_Date2, cvv2, otp2;
 	Operation oo=new Operation();       
 	Excel_File excel=new Excel_File();
@@ -37,18 +39,19 @@ public class Automation extends WebDriverUtil {
 		
 	}
 	
-	/*Successful Payment with Credit card*/
-	@Test
-	public void TestCase1() throws Exception{
+	/*Test case for Successful Payment with Credit card*/
+	
+	@Test(enabled=true, priority=0)
+	@Parameters("browser")
+	public void PaymentSuccessful() throws Exception{
 		
-		/*webDriver call*/
+		
 		driver=WebDriverPojo.getDriver();
-		ngDriver = new NgWebDriver((JavascriptExecutor) driver);
+		ngDriver = new NgWebDriver((JavascriptExecutor) driver);			/*webDriver call*/
 		ngDriver.waitForAngularRequestsToFinish();
 		
-		/*Credit card 1 data */
 		cc_No1 = Excel_File.getCellData(1, 0);
-		expiry_Date1 = Excel_File.getCellData(1, 1);
+		expiry_Date1 = Excel_File.getCellData(1, 1);						/*Credit card 1 data */
 		cvv1 = Excel_File.getCellData(1, 2);
 		otp1 = Excel_File.getCellData(1, 3);
 		
@@ -57,25 +60,27 @@ public class Automation extends WebDriverUtil {
 		ExcelPojo.setCvv(cvv1);
 		ExcelPojo.setOtp(otp1);
 		
-		/*Page factory elements call*/
-		Elements ee=PageFactory.initElements(driver, Elements.class);
 		oo.checkout_Flow(driver, ngDriver, ExcelPojo.getCc_No(), ExcelPojo.getCvv(), ExcelPojo.getExpiry_Date(), ExcelPojo.getOtp());
+		Thread.sleep(3000);
+		
+		oo.transaction_Success(driver, ngDriver, browser);
+		
 		Thread.sleep(3000);
 				
 	}
 	
-	/*Faild Payment with Credit card*/
-	@Test
-	public void TestCase2() throws Exception{
+	/*Test case for Failed Payment with Credit card*/
+	
+	@Test(enabled=true, priority=1)
+	@Parameters("browser")
+	public void PaymentFailed() throws Exception{
 		
-		/*webDriver call*/
 		driver=WebDriverPojo.getDriver();
-		ngDriver = new NgWebDriver((JavascriptExecutor) driver);
+		ngDriver = new NgWebDriver((JavascriptExecutor) driver);				/*webDriver call*/
 		ngDriver.waitForAngularRequestsToFinish();
 		
-		/*Credit card 2 data */
 		cc_No2 = Excel_File.getCellData(2, 0);
-		expiry_Date2 = Excel_File.getCellData(2, 1);
+		expiry_Date2 = Excel_File.getCellData(2, 1);							/*Credit card 2 data */
 		cvv2 = Excel_File.getCellData(2, 2);
 		otp2 = Excel_File.getCellData(2, 3);
 		
@@ -84,11 +89,12 @@ public class Automation extends WebDriverUtil {
 		ExcelPojo.setCvv(cvv2);
 		ExcelPojo.setOtp(otp2);	
 		
-		/*Page factory elements call*/
-		Elements ee=PageFactory.initElements(driver, Elements.class);
 		oo.checkout_Flow(driver, ngDriver, ExcelPojo.getCc_No(), ExcelPojo.getCvv(), ExcelPojo.getExpiry_Date(), ExcelPojo.getOtp());
 		Thread.sleep(3000);
-				
+		
+		oo.transaction_Failed(driver, ngDriver, browser);
+		
+		Thread.sleep(3000);
 	}
 
 }

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="93838" started-at="2020-03-30T00:12:47Z" finished-at="2020-03-30T00:14:21Z">
+  <suite name="TestSuite" duration-ms="158982" started-at="2020-03-30T12:07:01Z" finished-at="2020-03-30T12:09:40Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="43002" started-at="2020-03-30T00:12:47Z" finished-at="2020-03-30T00:13:30Z">
+    <test name="ChromeTest" duration-ms="73740" started-at="2020-03-30T12:07:01Z" finished-at="2020-03-30T12:08:14Z">
       <class name="goJek_Automation.Automation">
-        <test-method status="PASS" signature="excel_cal()[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="excel_cal" is-config="true" duration-ms="375" started-at="2020-03-30T05:42:47Z" finished-at="2020-03-30T05:42:47Z">
+        <test-method status="PASS" signature="excel_cal()[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="excel_cal" is-config="true" duration-ms="331" started-at="2020-03-30T17:37:01Z" finished-at="2020-03-30T17:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excel_cal -->
-        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="webDriverLaunch" is-config="true" duration-ms="2871" started-at="2020-03-30T05:42:47Z" finished-at="2020-03-30T05:42:50Z">
+        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="webDriverLaunch" is-config="true" duration-ms="6055" started-at="2020-03-30T17:37:01Z" finished-at="2020-03-30T17:37:07Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverLaunch -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="TestCase1" duration-ms="18866" started-at="2020-03-30T05:42:50Z" finished-at="2020-03-30T05:43:09Z">
+        <test-method status="PASS" signature="PaymentSuccessful()[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="PaymentSuccessful" duration-ms="31630" started-at="2020-03-30T17:37:07Z" finished-at="2020-03-30T17:37:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="webDriverTearDown" is-config="true" duration-ms="172" started-at="2020-03-30T05:43:09Z" finished-at="2020-03-30T05:43:09Z">
+        </test-method> <!-- PaymentSuccessful -->
+        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="webDriverTearDown" is-config="true" duration-ms="172" started-at="2020-03-30T17:37:39Z" finished-at="2020-03-30T17:37:39Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverTearDown -->
-        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="webDriverLaunch" is-config="true" duration-ms="2152" started-at="2020-03-30T05:43:09Z" finished-at="2020-03-30T05:43:11Z">
+        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="webDriverLaunch" is-config="true" duration-ms="4624" started-at="2020-03-30T17:37:39Z" finished-at="2020-03-30T17:37:43Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverLaunch -->
-        <test-method status="PASS" signature="TestCase2()[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="TestCase2" duration-ms="18382" started-at="2020-03-30T05:43:11Z" finished-at="2020-03-30T05:43:30Z">
+        <test-method status="PASS" signature="PaymentFailed()[pri:1, instance:goJek_Automation.Automation@4ec6a292]" name="PaymentFailed" duration-ms="30792" started-at="2020-03-30T17:37:43Z" finished-at="2020-03-30T17:38:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6a5fc7f7]" name="webDriverTearDown" is-config="true" duration-ms="172" started-at="2020-03-30T05:43:30Z" finished-at="2020-03-30T05:43:30Z">
+        </test-method> <!-- PaymentFailed -->
+        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@4ec6a292]" name="webDriverTearDown" is-config="true" duration-ms="126" started-at="2020-03-30T17:38:14Z" finished-at="2020-03-30T17:38:14Z">
           <params>
             <param index="0">
               <value>
@@ -65,13 +65,13 @@
         </test-method> <!-- webDriverTearDown -->
       </class> <!-- goJek_Automation.Automation -->
     </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="50824" started-at="2020-03-30T00:13:30Z" finished-at="2020-03-30T00:14:21Z">
+    <test name="FirefoxTest" duration-ms="84132" started-at="2020-03-30T12:08:15Z" finished-at="2020-03-30T12:09:40Z">
       <class name="goJek_Automation.Automation">
-        <test-method status="PASS" signature="excel_cal()[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="excel_cal" is-config="true" duration-ms="18" started-at="2020-03-30T05:43:30Z" finished-at="2020-03-30T05:43:30Z">
+        <test-method status="PASS" signature="excel_cal()[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="excel_cal" is-config="true" duration-ms="17" started-at="2020-03-30T17:38:15Z" finished-at="2020-03-30T17:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excel_cal -->
-        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="webDriverLaunch" is-config="true" duration-ms="4673" started-at="2020-03-30T05:43:30Z" finished-at="2020-03-30T05:43:35Z">
+        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="webDriverLaunch" is-config="true" duration-ms="6921" started-at="2020-03-30T17:38:16Z" finished-at="2020-03-30T17:38:22Z">
           <params>
             <param index="0">
               <value>
@@ -82,11 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverLaunch -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="TestCase1" duration-ms="18728" started-at="2020-03-30T05:43:35Z" finished-at="2020-03-30T05:43:53Z">
+        <test-method status="PASS" signature="PaymentSuccessful()[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="PaymentSuccessful" duration-ms="30024" started-at="2020-03-30T17:38:22Z" finished-at="2020-03-30T17:38:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="webDriverTearDown" is-config="true" duration-ms="2572" started-at="2020-03-30T05:43:53Z" finished-at="2020-03-30T05:43:56Z">
+        </test-method> <!-- PaymentSuccessful -->
+        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="webDriverTearDown" is-config="true" duration-ms="2537" started-at="2020-03-30T17:38:52Z" finished-at="2020-03-30T17:38:55Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverTearDown -->
-        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="webDriverLaunch" is-config="true" duration-ms="4583" started-at="2020-03-30T05:43:56Z" finished-at="2020-03-30T05:44:01Z">
+        <test-method status="PASS" signature="webDriverLaunch(java.lang.String)[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="webDriverLaunch" is-config="true" duration-ms="10030" started-at="2020-03-30T17:38:55Z" finished-at="2020-03-30T17:39:05Z">
           <params>
             <param index="0">
               <value>
@@ -108,11 +108,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webDriverLaunch -->
-        <test-method status="PASS" signature="TestCase2()[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="TestCase2" duration-ms="18720" started-at="2020-03-30T05:44:01Z" finished-at="2020-03-30T05:44:19Z">
+        <test-method status="PASS" signature="PaymentFailed()[pri:1, instance:goJek_Automation.Automation@7dc36524]" name="PaymentFailed" duration-ms="31017" started-at="2020-03-30T17:39:05Z" finished-at="2020-03-30T17:39:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@6fadae5d]" name="webDriverTearDown" is-config="true" duration-ms="1529" started-at="2020-03-30T05:44:19Z" finished-at="2020-03-30T05:44:21Z">
+        </test-method> <!-- PaymentFailed -->
+        <test-method status="PASS" signature="webDriverTearDown(java.lang.String)[pri:0, instance:goJek_Automation.Automation@7dc36524]" name="webDriverTearDown" is-config="true" duration-ms="3586" started-at="2020-03-30T17:39:36Z" finished-at="2020-03-30T17:39:40Z">
           <params>
             <param index="0">
               <value>

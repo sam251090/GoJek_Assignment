@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestSuite]" parallel="tests">
-  <test name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="goJek_Automation.Automation">
-        <methods>
-          <include name="webDriverLaunch"/>
-          <include name="webDriverLaunch"/>
-          <include name="TestCase2"/>
-          <include name="excel_cal"/>
-          <include name="excel_cal"/>
-          <include name="webDriverTearDown"/>
-          <include name="webDriverTearDown"/>
-        </methods>
-      </class> <!-- goJek_Automation.Automation -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test name="FirefoxTest(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestSuite]">
+  <test name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="goJek_Automation.Automation">
         <methods>
           <include name="webDriverLaunch"/>
-          <include name="webDriverLaunch"/>
-          <include name="TestCase2"/>
-          <include name="excel_cal"/>
           <include name="excel_cal"/>
           <include name="webDriverTearDown"/>
-          <include name="webDriverTearDown"/>
+          <include name="PaymentSuccessful"/>
         </methods>
       </class> <!-- goJek_Automation.Automation -->
     </classes>
